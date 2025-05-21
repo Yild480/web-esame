@@ -1,0 +1,3401 @@
+html {
+    box-sizing: border-box; 
+}
+
+body {
+margin: 0;
+font-family: "Lato";
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+margin: 0;
+padding: 0;
+ text-wrap: pretty;
+}
+
+img {
+max-width: 100%;
+display: block;
+}
+
+.contenitore {
+max-width: 1100px; 
+margin: 0 auto;
+}
+/*Home Page*/
+header{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #3B6148;
+    align-items: center;
+    margin: auto;
+}
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    text-align: left;
+   
+    
+    
+}
+
+header a {
+    color: #ffffff;
+    text-transform:capitalize;   
+    text-decoration: none;
+    display: flex;
+    
+    
+}
+
+header a:hover{
+    cursor: pointer;
+    text-decoration:none;
+}
+
+header p{
+    font-family:"Lato";
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0%;
+}
+header ul{
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: medium;
+   
+}
+
+header li a:hover{
+    text-decoration: underline;
+    color: #E19F22;
+}
+
+.intro_img {
+    position: relative;
+    text-align: left;
+    color: white;
+  }
+
+  .intro_img img{
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    object-fit: cover;
+    object-position: 15% 63%;
+  }
+
+  .intro_frase {
+    position: absolute;
+    line-height: 1.2;
+    bottom: 15px;
+    left: 14vw;
+    font-size: 24px;
+  }
+
+  section.card {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    margin-top: 100px;
+    padding: 15px;
+  }
+
+  div.testo_home p{
+    font-size: 16px;
+    line-height: 1.4;
+    width: 50%;
+    
+  }
+
+  
+
+
+.tasti {
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    margin-bottom: 15px;
+   
+}
+
+.tasti a{
+    background-color: #E19F22;
+    padding: 4px 4px;
+    padding-top: 4px;
+    padding-bottom: 6px;
+    width: 25px;
+    border-radius: 2px;
+    
+    font-size: 20px;
+    
+    text-decoration: none;
+    color: #3B6148;
+     transition: .2s;
+     font-weight: bold;
+     
+}
+
+.tasti a:after{
+    content: 'Scopri';
+    font-weight: normal;
+    position: relative;
+    left: -10px;
+    opacity: 0;
+    transition: 0.4s;
+
+}
+
+.tasti a:hover:after{
+    left: 0px;
+    opacity: 1;
+    background-color: #E19F22;
+    padding: 4px 5px;
+    padding-top: 4px;
+    padding-bottom: 7px;
+    border-radius: 2px;
+
+}
+.card h2{
+    color: #3B6148;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 2;
+   
+}
+.card_opzioni {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1100px;
+  margin: auto;
+  gap: 15px;
+  
+}
+
+.opzioni a{
+   /* border-left: solid #E19F22 2px;
+    padding: 10px;
+    text-decoration: none;
+    color: #3B6148;
+    font-weight: bold;
+    font-size: 20px;
+    */
+    color: #3B6148;
+     text-decoration: none;
+    font-size: 20px;
+   
+    
+}
+
+.opzioni h3{
+  border-left: solid #E19F22 2px;
+  padding: 10px;
+}
+
+
+
+.opzioni a:hover{
+   /*background-color: #E19F22;
+    color: #ffffff;
+    transition: 0.5s;*/
+     color: #E19F22;
+     transition: 0.2s;
+     
+    
+}
+
+.img_home {
+   display: grid;
+    margin-bottom: 20px;
+    grid-template-columns: repeat(4, 1fr);
+
+    
+}
+.card_opzioni img{
+    object-fit: cover;
+    width: 240px;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    max-width: 100%;
+    background-color: #3B6148;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-top: 100px;
+}
+footer ul{
+    display: flex;
+    color: #ffffff;
+    font-family: 'Lato';
+    font-weight: bold;
+}
+footer nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 60px;
+    color: #ffffff;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: normal;
+}
+
+@media (max-width: 800px){
+     
+header {
+   
+    align-items: normal;
+    gap: 5px;
+    flex-direction: column;
+    
+}
+
+    header p{
+        font-size: 3.8vw;
+        text-align: left;
+        padding: 4px;
+        
+    }
+    
+
+    nav ul {
+        padding: 4px;
+         
+      
+    }
+
+    nav ul a {
+        font-size: 16px; 
+            
+    }
+
+   
+
+    section.intro_img img{
+      height: 200px;
+    }
+
+   div.intro_frase h1 {
+        font-size: 20px;
+    }
+ section.card  {
+      max-width: 100%;
+      display: flex;
+      margin-top: 50px;
+    }
+
+    div.testo_home h2{
+      font-size: 16px;
+      margin: auto;
+      width: 100%;
+    }
+
+  
+div.testo_home p{
+    font-size: 14px;
+    line-height: 1.4;
+    width: 75%;
+    
+  }
+
+    .tasti{
+      padding: 15px;
+    }
+
+    .card_opzioni {
+      max-width: 100%;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      margin: 0px auto 0 15px;
+      
+      
+      
+    }
+
+    .opzioni img{
+      width: 200px;
+      height: 200px;
+      
+    }
+
+    .opzioni a {
+      font-size: 16px;
+      font-weight: bold;
+      font-family: 'Lato';
+      
+    }
+
+    .opzioni h3{
+      font-size: 16px;
+    }
+   
+}
+
+
+
+/*PAGINA ANIMALI*/
+
+html {
+    box-sizing: border-box; 
+}
+
+body {
+margin: 0;
+font-family: "Lato";
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+margin: 0;
+padding: 0;
+}
+
+img {
+max-width: 100%;
+display: block;
+}
+
+.contenitore {
+max-width: 1100px; 
+margin: 0 auto;
+}
+
+.intro_img {
+    margin: auto;
+    position: relative;
+    max-width: 100%;
+    text-align: left;
+    color: white;
+    
+  }
+
+  .intro_img img{
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    object-fit: cover;
+    object-position: 15% 60%;
+  }
+/*uguale per tutti*/
+  ul.menu {
+    padding-left: 5px;
+  list-style: none;
+  color: #E19F22;
+  }
+
+  ul.menu li{
+     display: inline;
+  font-size: 24px;
+ 
+  }
+
+  ul.menu li+li:before {
+  padding: 4px;
+  color: #ffffff;
+  content: "/\00a0";
+}
+
+  ul.menu li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+ul.menu li a:hover {
+  color: #E19F22;
+  text-decoration: underline;
+}
+
+ /* .introanimali_frase {
+    position: relative;
+    line-height: 1.2;
+    bottom: 90px;
+    left: 14vw;
+    font-size: 24px;
+  }*/
+
+  .intro_frase {
+    position: absolute;
+    max-width: 1100px;
+  bottom: 15px;
+  left: 14vw;
+  color: white;
+  margin: 0;
+  font-size: 24px;
+  }
+
+  .frase_animali{
+    max-width: 950px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 110px;
+    margin-top: 60px;
+    
+  }
+
+  .linee{
+    margin-top: 10px; 
+    border-bottom: #E19F22 solid 2px;
+
+  }
+  .frase_animali p{
+
+font-size: 24px;
+text-align: center;
+letter-spacing: 0.02em;
+color: #3B6148;
+font-weight:normal;
+}
+
+  .scelta_animali{
+    max-width: 950px;
+    margin: auto;
+    margin-bottom: 150px;
+    
+    
+
+  }
+
+  .flex_animali{
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    align-items: center;
+    
+  }
+
+  div.flex_animali img{
+    object-fit: cover;
+    width: 250px;
+    height: 340px;
+    border-radius: 20px;
+    margin-right: 250px;
+  }
+
+  div.testo_animali p{
+    width: 80%;
+    line-height: 1.3;
+    font-size: 16px;
+    margin-bottom: 15px;
+   
+    
+    
+  }
+
+  .testo_animali h2{
+    line-height: 1.4;
+    margin-bottom: 20px;
+    color: #3B6148;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .tasti_animali {
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    margin-bottom: 15px;
+   
+}
+
+.tasti_animali a{
+    background-color: #E19F22;
+    padding: 3px 3px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    width: 23px;
+    border-radius: 2px;
+    
+    font-size: 20px;
+    
+    text-decoration: none;
+    color: #3B6148;
+     transition: .2s;
+     font-weight: bold;
+     
+}
+
+.tasti_animali a:after{
+    content: 'Scopri';
+    font-weight: normal;
+    position: relative;
+    left: -10px;
+    opacity: 0;
+    transition: 0.4s;
+
+}
+
+.tasti_animali a:hover:after{
+    left: 0px;
+    opacity: 1;
+    background-color: #E19F22;
+    padding: 3px 4px;
+    padding-top: 3px;
+    padding-bottom: 6px;
+    border-radius: 2px;
+
+}
+
+ .scelta_animalireverse{
+    max-width: 950px;
+    margin: auto;
+    margin-bottom: 150px;
+    
+
+  }
+
+  .flex_animalireverse{
+    max-width: 950px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+
+  div.flex_animalireverse img{
+    object-fit: cover;
+    width: 250px;
+    height: 340px;
+    border-radius: 20px;
+    margin-right: 350px;
+    object-position: 1px;
+    
+  }
+
+  div.testo_animalireverse p{
+    width: 55%;
+    line-height: 1.3;
+    font-size: 16px;
+    margin-bottom: 15px;
+    
+    
+  }
+
+  .testo_animalireverse h2{
+    line-height: 1.4;
+    margin-bottom: 20px;
+    color: #3B6148;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+ /*Orso*/
+ .intro_orso{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+    flex-direction: row;
+    gap: 150px;
+    align-items: center;
+    align-content: center;
+    margin-top: 50px;
+    border-bottom: #E19F22 solid 3px;
+    margin-bottom: 50px;
+    
+    
+ }
+
+ .introduzione_orso p{
+  font-size: 16px;
+  line-height: 1.4;
+  width: 70%;
+  margin-bottom: 50px;
+  letter-spacing: 0.01rem;
+ }
+
+ .introduzione_orso h3{
+  color: #3B6148;
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+ }
+
+ .info_orso {
+  margin-bottom: 50px;
+  width: 100%;
+ }
+
+ .info_orso h2{
+  font-size: 12px;
+  font-weight: bold;
+  color: #3B6148;
+  width: 100%;
+  line-height: 1.4;
+ }
+
+ .info_orso p{
+  padding-bottom: 10px;
+  font-size: 12px;
+  margin-bottom: 15px;
+  border-bottom: #E19F22 solid 1px;
+  font-weight: 400;
+  letter-spacing: 0.01rem;
+ }
+
+ .testi_orso{
+  
+  max-width: 1100px;
+  margin: 150px auto;
+  display: flex;
+  
+  margin-bottom: 100px;
+ }
+
+ .titoli_orso h3{
+   color: #3B6148;
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 0;
+ 
+  
+ }
+
+ .paragrafi_orso p{
+  font-size: 16px;
+  line-height: 1.4;
+  width: 60%;
+  margin-bottom: 40px;
+  letter-spacing: 0.01rem;
+  justify-self: end;
+ }
+
+ .img_orso {
+  max-width: 900px;
+    margin: auto ;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+
+ }
+
+ .img_orso img{
+  margin: 0 auto;
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+ }
+
+ .linea_orso{
+  border-top: #E19F22 solid 3px;
+  max-width: 1100px;
+  margin: auto;
+ }
+
+ .tutela_orso {
+  max-width: 750px;
+  margin: auto;
+  margin-bottom: 200px;
+  background-color: #3B6148;
+  border-radius: 20px;
+  padding: 50px;
+  
+ }
+
+ .tutela_orso h4{
+  font-size: 20px;
+  color: #ffffff;
+  text-align: left;
+  line-height: 3;
+  margin: auto;
+  width: 70%;
+ }
+
+ .tutela_orso p{
+  color: #ffffff;
+  font-size: 16px;
+  width: 70%;
+ margin-bottom: 30px;
+  line-height: 1.5;
+  margin: auto;
+  
+ }
+.tastotutela_orso {
+  margin: auto;
+  max-width: 750px;
+  width: 70%;
+  margin-top: 30px;
+}
+ .tutela_orso a{
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 10px;
+  margin: auto;
+  font-size: 16px;
+  text-decoration: none;
+  color: #3B6148;
+  width: fit-content;
+  
+ }
+
+ .tutela_orso a:hover{
+  color: #E19F22;
+  
+ }
+
+ @media (max-width: 800px){
+
+section.intro_orso {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 10px;
+  }
+
+  div.info_orso{
+    margin-bottom: 15px;
+    margin-top: 10px;
+   
+    
+    
+  }
+
+  div.info_orso h2, div.info_orso p{
+    margin: auto;
+    padding-left: 30px;
+    padding-top: 5px;
+    border-bottom: 0;
+    max-width: 70%;
+    
+  }
+
+  div.info_orso p{
+   border-bottom: solid #E19F22 1px;
+   max-width: 70%;
+  }
+  div.introduzione_orso  {
+    margin: auto;
+    
+    
+  }
+
+   div.introduzione_orso p{
+    font-size: 14px;
+    width: 75%;
+    border-bottom: #E19F22 solid 2px;
+    padding-bottom: 20px;
+    margin: auto;
+    
+   }
+
+    div.introduzione_orso h3{
+      font-size: 20px;
+      margin: auto;
+      padding-bottom: 15px;
+      width: 75%;
+      margin-top: 30px;
+    }
+
+    section.testi_orso {
+      margin-top: 50px;
+      
+     
+    }
+
+    section.intro_orso{
+      border-bottom:none;
+    
+    }
+
+
+    section.testi_orso{
+      max-width: 100%;
+      display:grid;
+      margin-bottom: 40px;
+    }
+    div.titoli_orso h3{
+      font-size: 20px;
+      display: flex;
+      width: 75%;
+      margin: auto;
+      margin-bottom: 15px;
+     
+    }
+
+    div.paragrafi_orso p{
+      font-size: 14px;
+      width: 75%;
+      display: flex;
+      margin: auto;
+      margin-bottom: 15px;
+    }
+
+ section.img_orso{
+  margin-bottom: 50px;
+ }
+    section.img_orso img{
+      width: 40vw;
+      height: 40vw;
+      
+      
+    }
+
+    div.linea_orso {
+      width: 75%;
+      margin: auto;
+    }
+
+    section.tutela_orso{
+      width: 85%;
+      padding: 25px;
+    }
+
+    div.testotutela_orso p{
+      font-size: 14px;
+      width: 80%;
+    }
+
+    div.testotutela_orso h4{
+      font-size: 16px;
+      width: 80%;
+    }
+    div.tastotutela_orso{
+      width: 80%;
+      margin-top: 20px;
+    }
+
+    div.tastotutela_orso a{
+      font-size: 14px;
+    }
+ }
+
+ @media  (max-width: 800px) {
+
+  ul.menu li, ul.menu li a{
+    font-size: 16px;
+    
+  }
+  section.frase_animali  {
+    margin-bottom: 30px;
+  }
+  section.frase_animali p {
+    font-size: 16px;
+    
+  }
+
+  div.linee{
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+    
+  }
+
+  section.scelta_animali, .scelta_animalireverse{
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+    div.flex_animali{
+ 
+ margin: auto;
+    display: grid;
+    gap: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+    
+  }
+
+  div.testo_animali p{
+    width: 70%;
+    margin: 0;
+    font-size: 14px;
+    margin: auto;
+    line-height: 1.4
+
+  }
+  div.testo_animali h2{
+    font-size: 20px;
+    margin: auto;
+    width: 70%;
+    line-height: 1.4;
+    margin-top: 20px;
+  }
+  div.tasti_animali{
+    margin: auto;
+    width: 70%;
+    margin-top: 10px
+    
+  }
+
+ 
+  div.foto_animali img{
+    height: 200px;
+    margin: auto;
+    width: 340px;
+    object-position: 21% 60%;
+    margin-top: 10px;
+    
+  }
+
+  #orso_media{
+    object-position: 20% 20%;
+  }
+
+  div.flex_animalireverse{
+ align-content: center;
+ margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    column-gap: 10px;
+    
+    
+  }
+
+  div.testo_animalireverse p{
+    width: 70%;
+    margin: 0;
+    font-size: 14px;
+    margin: auto;
+    line-height: 1.4
+
+  }
+  div.testo_animalireverse h2{
+    font-size: 20px;
+    margin: auto;
+    width: 70%;
+    line-height: 1.4;
+    margin-top: 20px;
+  }
+  div.tasti_animali{
+    margin: auto;
+    width: 70%;
+    margin-top: 10px
+  }
+
+  div.tasti_animali a{
+    font-size: 16px;
+  }
+  div.foto_animalireverse img{
+    height: 200px;
+    margin: auto;
+    width: 340px;
+  }
+
+   div.foto_vegetazionereverse img{
+    height: 200px;
+    margin: auto;
+    width: 340px;
+    object-position: 20% 10%;
+  }
+  
+ }
+
+ /*CAPOVACCAIO*/
+  .introcapovaccaio_img {
+    margin: auto;
+    position: relative;
+    max-width: 100%;
+    text-align: left;
+    color: white;
+    
+  }
+
+  .introcapovaccaio_img img{
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    object-fit: cover;
+    object-position: 15% 56%;
+    
+    
+  }
+.intro_capovaccaio{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+    flex-direction: row;
+    gap: 150px;
+    align-items: center;
+    align-content: center;
+    margin-top: 50px;
+    border-bottom: #E19F22 solid 3px;
+    margin-bottom: 50px;
+    
+    
+ }
+
+ .introduzione_capovaccaio p{
+  font-size: 16px;
+  line-height: 1.4;
+  width: 70%;
+  margin-bottom: 50px;
+  letter-spacing: 0.01rem;
+ }
+
+ .introduzione_capovaccaio h3{
+  color: #3B6148;
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+ }
+
+ .info_capovaccaio {
+  margin-bottom: 50px;
+  width: 100%;
+ }
+
+ .info_capovaccaio h2{
+  font-size: 12px;
+  font-weight: bold;
+  color: #3B6148;
+  width: 100%;
+  line-height: 1.4;
+ }
+
+ .info_capovaccaio p{
+  padding-bottom: 10px;
+  font-size: 12px;
+  margin-bottom: 15px;
+  border-bottom: #E19F22 solid 1px;
+  font-weight: 400;
+  letter-spacing: 0.01rem;
+ }
+
+ .testi_capovaccaio{
+  
+  max-width: 1100px;
+  margin: 150px auto;
+  display: flex;
+  
+  margin-bottom: 100px;
+ }
+
+ .titoli_capovaccaio h3{
+   color: #3B6148;
+  font-size: 24px;
+  line-height: 1.4;
+  margin: auto;
+  
+  
+ }
+
+ .paragrafi_capovaccaio p{
+  font-size: 16px;
+  line-height: 1.4;
+  width: 60%;
+  margin-bottom: 40px;
+  letter-spacing: 0.01rem;
+  justify-self: end;
+  
+ }
+
+ .img_capovaccaio {
+  max-width: 900px;
+    margin: auto ;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+
+ }
+
+ .img_capovaccaio img{
+  margin: 0 auto;
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  object-position: 75%;
+ }
+
+ .linea_capovaccaio{
+  border-top: #E19F22 solid 3px;
+  max-width: 1100px;
+  margin: auto;
+ }
+
+ .tutela_capovaccaio {
+  max-width: 750px;
+  margin: auto;
+  margin-bottom: 200px;
+  background-color: #3B6148;
+  border-radius: 20px;
+  padding: 50px;
+  
+ }
+
+ .tutela_capovaccaio h4{
+  font-size: 20px;
+  color: #ffffff;
+  text-align: left;
+  line-height: 3;
+  margin: auto;
+  width: 70%;
+ }
+
+ .tutela_capovaccaio p{
+  color: #ffffff;
+  font-size: 16px;
+  width: 70%;
+ margin-bottom: 30px;
+  line-height: 1.5;
+  margin: auto;
+  
+ }
+.tastotutela_capovaccaio {
+  margin: auto;
+  max-width: 750px;
+  width: 70%;
+  margin-top: 30px;
+}
+ .tutela_capovaccaio a{
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 10px;
+  margin: auto;
+  font-size: 16px;
+  text-decoration: none;
+  color: #3B6148;
+  width: fit-content;
+  
+ }
+
+ .tutela_capovaccaio a:hover{
+  color: #E19F22;
+  
+ }
+
+  @media (max-width: 800px){
+
+    section.introcapovaccaio_img img{
+        height: 200px;
+      }
+section.intro_capovaccaio {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 10px;
+  }
+
+  div.info_capovaccaio{
+    margin-bottom: 15px;
+    margin-top: 10px;
+   
+    
+    
+  }
+
+  div.info_capovaccaio h2, div.info_capovaccaio p{
+    margin: auto;
+    padding-left: 30px;
+    padding-top: 5px;
+    border-bottom: 0;
+    max-width: 70%;
+    
+  }
+
+  div.info_capovaccaio p{
+   border-bottom: solid #E19F22 1px;
+   max-width: 70%;
+  }
+  div.introduzione_capovaccaio  {
+    margin: auto;
+    
+    
+  }
+
+   div.introduzione_capovaccaio p{
+    font-size: 14px;
+    width: 75%;
+    border-bottom: #E19F22 solid 2px;
+    padding-bottom: 20px;
+    margin: auto;
+    
+   }
+
+    div.introduzione_capovaccaio h3{
+      font-size: 20px;
+      margin: auto;
+      padding-bottom: 15px;
+      width: 75%;
+      margin-top: 30px;
+    }
+
+    section.testi_capovaccaio {
+      margin-top: 50px;
+      
+     
+    }
+
+    section.intro_capovaccaio{
+      border-bottom:none;
+    
+    }
+
+
+    section.testi_capovaccaio{
+      max-width: 100%;
+      display:grid;
+      margin-bottom: 40px;
+    }
+    div.titoli_capovaccaio h3{
+      font-size: 20px;
+      display: flex;
+      width: 75%;
+      margin: auto;
+      margin-bottom: 15px;
+     
+    }
+
+    div.paragrafi_capovaccaio p{
+      font-size: 14px;
+      width: 75%;
+      display: flex;
+      margin: auto;
+      margin-bottom: 15px;
+    }
+
+ section.img_capovaccaio{
+  margin-bottom: 50px;
+ }
+    section.img_capovaccaio img{
+      width: 40vw;
+      height: 40vw;
+      
+      
+    }
+
+    div.linea_capovaccaio {
+      width: 75%;
+      margin: auto;
+    }
+
+    section.tutela_capovaccaio{
+      width: 85%;
+      padding: 25px;
+    }
+
+    div.testotutela_capovaccaio p{
+      font-size: 14px;
+      width: 80%;
+    }
+
+    div.testotutela_capovaccaio h4{
+      font-size: 16px;
+      width: 80%;
+    }
+    div.tastotutela_capovaccaio{
+      width: 80%;
+      margin-top: 20px;
+    }
+
+    div.tastotutela_capovaccaio a{
+      font-size: 14px;
+    }
+ }
+
+/*SALAMANDRA*/
+ .intro_salamandra{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+    flex-direction: row;
+    gap: 150px;
+    align-items: center;
+    align-content: center;
+    margin-top: 50px;
+    border-bottom: #E19F22 solid 3px;
+    margin-bottom: 50px;
+    
+    
+ }
+
+  .introsalamandra_img {
+    margin: auto;
+    position: relative;
+    max-width: 100%;
+    text-align: left;
+    color: white;
+    
+  }
+
+  .introsalamandra_img img{
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    object-fit: cover;
+    object-position: 15% 60%;
+    filter: brightness(80%);
+    
+  }
+
+ .introduzione_salamandra p{
+  font-size: 16px;
+  line-height: 1.4;
+  width: 70%;
+  margin-bottom: 50px;
+  letter-spacing: 0.01rem;
+ }
+
+ .introduzione_salamandra h3{
+  color: #3B6148;
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+ }
+
+ .info_salamandra{
+  margin-bottom: 50px;
+  width: 100%;
+ }
+
+ .info_salamandra h2{
+  font-size: 12px;
+  font-weight: bold;
+  color: #3B6148;
+  width: 100%;
+  line-height: 1.4;
+ }
+
+ .info_salamandra p{
+  padding-bottom: 10px;
+  font-size: 12px;
+  margin-bottom: 15px;
+  border-bottom: #E19F22 solid 1px;
+  font-weight: 400;
+  letter-spacing: 0.01rem;
+ }
+
+ .testi_salamandra{
+  
+  max-width: 1100px;
+  margin: 150px auto;
+  display: flex;
+  
+  margin-bottom: 100px;
+ }
+
+ .titoli_salamandra h3{
+   color: #3B6148;
+  font-size: 24px;
+  line-height: 1.4;
+  margin: auto;
+  
+  
+ }
+
+ .paragrafi_salamandra p{
+  font-size: 16px;
+  line-height: 1.4;
+  width: 60%;
+  margin-bottom: 40px;
+  letter-spacing: 0.01rem;
+  justify-self: end;
+  
+ }
+
+ .img_salamandra{
+  max-width: 900px;
+    margin: auto ;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+
+ }
+
+ .img_salamandra img{
+  margin: 0 auto;
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+ }
+
+ .linea_salamandra{
+  border-top: #E19F22 solid 3px;
+  max-width: 1100px;
+  margin: auto;
+ }
+
+ .tutela_salamandra{
+  max-width: 750px;
+  margin: auto;
+  margin-bottom: 200px;
+  background-color: #3B6148;
+  border-radius: 20px;
+  padding: 50px;
+  
+ }
+
+ .tutela_salamandra h4{
+  font-size: 20px;
+  color: #ffffff;
+  text-align: left;
+  line-height: 3;
+  margin: auto;
+  width: 70%;
+ }
+
+ .tutela_salamandra p{
+  color: #ffffff;
+  font-size: 16px;
+  width: 70%;
+ margin-bottom: 30px;
+  line-height: 1.5;
+  margin: auto;
+  
+ }
+.tastotutela_salamandra{
+  margin: auto;
+  max-width: 750px;
+  width: 70%;
+  margin-top: 30px;
+}
+ .tutela_salamandra a{
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 10px;
+  margin: auto;
+  font-size: 16px;
+  text-decoration: none;
+  color: #3B6148;
+  width: fit-content;
+  
+ }
+
+ .tutela_salamandra a:hover{
+  color: #E19F22;
+  
+ }
+  @media (max-width: 800px){
+
+    section.introsalamandra_img img{
+        height: 200px;
+      }
+section.intro_salamandra {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 10px;
+  }
+
+  div.info_salamandra{
+    margin-bottom: 15px;
+    margin-top: 10px;
+   
+    
+    
+  }
+
+  div.info_salamandra h2, div.info_salamandra p{
+    margin: auto;
+    padding-left: 30px;
+    padding-top: 5px;
+    border-bottom: 0;
+    max-width: 70%;
+    
+  }
+
+  div.info_salamandra p{
+   border-bottom: solid #E19F22 1px;
+   max-width: 70%;
+  }
+  div.introduzione_salamandra  {
+    margin: auto;
+    
+    
+  }
+
+   div.introduzione_salamandra p{
+    font-size: 14px;
+    width: 75%;
+    border-bottom: #E19F22 solid 2px;
+    padding-bottom: 20px;
+    margin: auto;
+    
+   }
+
+    div.introduzione_salamandra h3{
+      font-size: 20px;
+      margin: auto;
+      padding-bottom: 15px;
+      width: 75%;
+      margin-top: 30px;
+    }
+
+    section.testi_salamandra {
+      margin-top: 50px;
+      
+     
+    }
+
+    section.intro_salamandra{
+      border-bottom:none;
+    
+    }
+
+
+    section.testi_salamandra{
+      max-width: 100%;
+      display:grid;
+      margin-bottom: 40px;
+    }
+    div.titoli_salamandra h3{
+      font-size: 20px;
+      display: flex;
+      width: 75%;
+      margin: auto;
+      margin-bottom: 15px;
+     
+    }
+
+    div.paragrafi_salamandra p{
+      font-size: 14px;
+      width: 75%;
+      display: flex;
+      margin: auto;
+      margin-bottom: 15px;
+    }
+
+ section.img_salamandra{
+  margin-bottom: 50px;
+ }
+    section.img_salamandra img{
+      width: 40vw;
+      height: 40vw;
+      
+      
+    }
+
+    div.linea_salamandra {
+      width: 75%;
+      margin: auto;
+    }
+
+    section.tutela_salamandra{
+      width: 85%;
+      padding: 25px;
+    }
+
+    div.testotutela_salamandra p{
+      font-size: 14px;
+      width: 80%;
+    }
+
+    div.testotutela_salamandra h4{
+      font-size: 16px;
+      width: 80%;
+    }
+    div.tastotutela_salamandra{
+      width: 80%;
+      margin-top: 20px;
+    }
+
+    div.tastotutela_salamandra a{
+      font-size: 14px;
+    }
+ }
+
+
+/*ORECCHIONE*/
+ .intro_orecchione{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+    flex-direction: row;
+    gap: 150px;
+    align-items: center;
+    align-content: center;
+    margin-top: 50px;
+    border-bottom: #E19F22 solid 3px;
+    margin-bottom: 50px;
+    
+    
+    
+ }
+ .introorecchione_img {
+    margin: auto;
+    position: relative;
+    max-width: 100%;
+    text-align: left;
+    color: white;
+    
+  }
+
+  .introorecchione_img img{
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    object-fit: cover;
+    object-position: 15% 60%;
+     transform: scaleX(-1);
+    
+  }
+
+ .introduzione_orecchione p{
+  font-size: 16px;
+  line-height: 1.4;
+  width: 70%;
+  margin-bottom: 50px;
+  letter-spacing: 0.01rem;
+ }
+
+ .introduzione_orecchione h3{
+  color: #3B6148;
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+ }
+
+ .info_orecchione{
+  margin-bottom: 50px;
+  width: 100%;
+ }
+
+ .info_orecchione h2{
+  font-size: 12px;
+  font-weight: bold;
+  color: #3B6148;
+  width: 100%;
+  line-height: 1.4;
+ }
+
+ .info_orecchione p{
+  padding-bottom: 10px;
+  font-size: 12px;
+  margin-bottom: 15px;
+  border-bottom: #E19F22 solid 1px;
+  font-weight: 400;
+  letter-spacing: 0.01rem;
+ }
+
+ .testi_orecchione{
+  
+  max-width: 1100px;
+  margin: 150px auto;
+  display: flex;
+  
+  margin-bottom: 100px;
+ }
+
+ .titoli_orecchione h3{
+   color: #3B6148;
+  font-size: 24px;
+  line-height: 1.4;
+  margin: auto;
+  
+  
+ }
+
+ .paragrafi_orecchione p{
+  font-size: 16px;
+  line-height: 1.4;
+  width: 60%;
+  margin-bottom: 40px;
+  letter-spacing: 0.01rem;
+  justify-self: end;
+  
+ }
+
+ .img_orecchione{
+  max-width: 900px;
+    margin: auto ;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    
+
+ }
+
+ .img_orecchione img{
+  margin: 0 auto;
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+ }
+
+ .linea_orecchione{
+  border-top: #E19F22 solid 3px;
+  max-width: 1100px;
+  margin: auto;
+ }
+
+ .tutela_orecchione{
+  max-width: 750px;
+  margin: auto;
+  margin-bottom: 200px;
+  background-color: #3B6148;
+  border-radius: 20px;
+  padding: 50px;
+  
+ }
+
+ .tutela_orecchione h4{
+  font-size: 20px;
+  color: #ffffff;
+  text-align: left;
+  line-height: 3;
+  margin: auto;
+  width: 70%;
+ }
+
+ .tutela_orecchione p{
+  color: #ffffff;
+  font-size: 16px;
+  width: 70%;
+ margin-bottom: 30px;
+  line-height: 1.5;
+  margin: auto;
+  
+ }
+.tastotutela_orecchione{
+  margin: auto;
+  max-width: 750px;
+  width: 70%;
+  margin-top: 30px;
+}
+ .tutela_orecchione a{
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 10px;
+  margin: auto;
+  font-size: 16px;
+  text-decoration: none;
+  color: #3B6148;
+  width: fit-content;
+  
+ }
+
+ .tutela_orecchione a:hover{
+  color: #E19F22;
+  
+ }
+
+   @media (max-width: 800px){
+
+    section.introorecchione_img img{
+        height: 200px;
+        object-position: 5% 79%;
+      }
+section.intro_orecchione {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 10px;
+  }
+
+  div.info_orecchione{
+    margin-bottom: 15px;
+    margin-top: 10px;
+   
+    
+    
+  }
+
+  div.info_orecchione h2, div.info_orecchione p{
+    margin: auto;
+    padding-left: 30px;
+    padding-top: 5px;
+    border-bottom: 0;
+    max-width: 70%;
+    
+  }
+
+  div.info_orecchione p{
+   border-bottom: solid #E19F22 1px;
+   max-width: 70%;
+  }
+  div.introduzione_orecchione  {
+    margin: auto;
+    
+    
+  }
+
+   div.introduzione_orecchione p{
+    font-size: 14px;
+    width: 75%;
+    border-bottom: #E19F22 solid 2px;
+    padding-bottom: 20px;
+    margin: auto;
+    
+   }
+
+    div.introduzione_orecchione h3{
+      font-size: 20px;
+      margin: auto;
+      padding-bottom: 15px;
+      width: 75%;
+      margin-top: 30px;
+    }
+
+    section.testi_orecchione {
+      margin-top: 50px;
+      
+     
+    }
+
+    section.intro_orecchione{
+      border-bottom:none;
+    
+    }
+
+
+    section.testi_orecchione{
+      max-width: 100%;
+      display:grid;
+      margin-bottom: 40px;
+    }
+    div.titoli_orecchione h3{
+      font-size: 20px;
+      display: flex;
+      width: 75%;
+      margin: auto;
+      margin-bottom: 15px;
+     
+    }
+
+    div.paragrafi_orecchione p{
+      font-size: 14px;
+      width: 75%;
+      display: flex;
+      margin: auto;
+      margin-bottom: 15px;
+    }
+
+ section.img_orecchione{
+  margin-bottom: 50px;
+ }
+    section.img_orecchione img{
+      width: 40vw;
+      height: 40vw;
+      
+      
+    }
+
+    div.linea_orecchione {
+      width: 75%;
+      margin: auto;
+    }
+
+    section.tutela_orecchione{
+      width: 85%;
+      padding: 25px;
+    }
+
+    div.testotutela_orecchione p{
+      font-size: 14px;
+      width: 80%;
+    }
+
+    div.testotutela_orecchione h4{
+      font-size: 16px;
+      width: 80%;
+    }
+    div.tastotutela_orecchione{
+      width: 80%;
+      margin-top: 20px;
+    }
+
+    div.tastotutela_orecchione a{
+      font-size: 14px;
+    }
+ }
+
+/*PRIMULA*/
+.introprimula_img {
+    margin: auto;
+    position: relative;
+    max-width: 100%;
+    text-align: left;
+    color: white;
+    
+  }
+
+  .introprimula_img img{
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    object-fit: cover;
+    object-position: 15% 80%;
+     transform: scaleX(-1);
+    
+  }
+.intro_primula{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+    flex-direction: row;
+    gap: 150px;
+    align-items: center;
+    align-content: center;
+    margin-top: 50px;
+    border-bottom: #E19F22 solid 3px;
+    margin-bottom: 50px;
+    
+ }
+
+  .introduzione_primula p{
+  font-size: 16px;
+  line-height: 1.4;
+  width: 70%;
+  margin-bottom: 50px;
+  letter-spacing: 0.01rem;
+ }
+
+ .introduzione_primula h3{
+  color: #3B6148;
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+ }
+
+ .info_primula {
+  margin-bottom: 50px;
+  width: 100%;
+ }
+
+ .info_primula h2{
+  font-size: 12px;
+  font-weight: bold;
+  color: #3B6148;
+  width: 100%;
+  line-height: 1.4;
+ }
+
+ .info_primula p{
+  padding-bottom: 10px;
+  font-size: 12px;
+  margin-bottom: 15px;
+  border-bottom: #E19F22 solid 1px;
+  font-weight: 400;
+  letter-spacing: 0.01rem;
+ }
+
+ .testi_primula{
+  
+  max-width: 1100px;
+  margin: 150px auto;
+  display: flex;
+  
+  margin-bottom: 100px;
+ }
+
+ .titoli_primula h3{
+   color: #3B6148;
+  font-size: 24px;
+  line-height: 1.4;
+  margin: auto;
+  
+  
+ }
+
+ .paragrafi_primula p{
+  font-size: 16px;
+  line-height: 1.4;
+  width: 60%;
+  margin-bottom: 40px;
+  letter-spacing: 0.01rem;
+  justify-self: end;
+  
+ }
+
+ .img_primula {
+  max-width: 900px;
+    margin: auto ;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+
+ }
+
+ .img_primula img{
+  margin: 0 auto;
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+ }
+
+ .linea_primula{
+  border-top: #E19F22 solid 3px;
+  max-width: 1100px;
+  margin: auto;
+ }
+
+ .tutela_primula {
+ max-width: 750px;
+ margin: auto;
+
+ 
+  
+ }
+
+ .tutela_primula h4{
+  font-size: 24px;
+  color: #3B6148;
+  text-align: left;
+  line-height: 3;
+ margin: auto;
+  width: 70%;
+  margin-top: 50px;
+ }
+
+ .tutela_primula p{
+  margin: auto;
+  font-size: 16px;
+  width: 70%;
+  line-height: 1.5;
+
+  margin-bottom: 20px;
+ 
+  
+ }
+ .tastotutela_primula {
+ margin: auto;
+ display: flex;
+ width: 70%;
+ }
+
+.tastotutela_primula a{
+    background-color: #E19F22;
+    padding: 3px 3px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    width: 23px;
+    border-radius: 2px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #3B6148;
+     transition: .2s;
+     font-weight: bold;
+    
+     
+    
+     
+}
+
+.tastotutela_primula a:after{
+    content: 'Scopri';
+    font-weight: normal;
+    position: relative;
+    left: -10px;
+    opacity: 0;
+    transition: 0.4s;
+
+}
+
+.tastotutela_primula a:hover:after{
+    left: 0px;
+    opacity: 1;
+    background-color: #E19F22;
+    padding: 3px 4px;
+    padding-top: 3px;
+    padding-bottom: 6px;
+    border-radius: 2px;
+
+}
+
+ @media (max-width: 800px){
+
+section.introprimula_img img{
+  height: 200px;
+}
+
+section.intro_primula {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 10px;
+  }
+
+  div.info_primula{
+    margin-bottom: 15px;
+    margin-top: 10px;
+   
+    
+    
+  }
+
+  div.info_primula h2, div.info_primula p{
+    margin: auto;
+    padding-left: 30px;
+    padding-top: 5px;
+    border-bottom: 0;
+    max-width: 70%;
+    
+  }
+
+  div.info_primula p{
+   border-bottom: solid #E19F22 1px;
+   max-width: 70%;
+  }
+  div.introduzione_primula  {
+    margin: auto;
+    
+    
+  }
+
+   div.introduzione_primula p{
+    font-size: 14px;
+    width: 75%;
+    border-bottom: #E19F22 solid 2px;
+    padding-bottom: 20px;
+    margin: auto;
+    
+   }
+
+    div.introduzione_primula h3{
+      font-size: 20px;
+      margin: auto;
+      padding-bottom: 15px;
+      width: 75%;
+      margin-top: 30px;
+    }
+
+    section.testi_primula {
+      margin-top: 50px;
+      
+     
+    }
+
+    section.intro_primula{
+      border-bottom:none;
+    
+    }
+
+
+    section.testi_primula{
+      max-width: 100%;
+      display:grid;
+      margin-bottom: 40px;
+    }
+    div.titoli_primula h3{
+      font-size: 20px;
+      display: flex;
+      width: 75%;
+      margin: auto;
+      margin-bottom: 15px;
+     
+    }
+
+    div.paragrafi_primula p{
+      font-size: 14px;
+      width: 75%;
+      display: flex;
+      margin: auto;
+      margin-bottom: 15px;
+    }
+
+ section.img_primula{
+  margin-bottom: 50px;
+ }
+    section.img_primula img{
+      width: 40vw;
+      height: 40vw;
+      
+      
+    }
+
+    div.linea_primula {
+      width: 75%;
+      margin: auto;
+    }
+
+    section.tutela_primula{
+      width: 85%;
+      padding: 25px;
+    }
+
+    section.tutela_primula p{
+      font-size: 14px;
+      width: 85%;
+    }
+
+    section.tutela_primula h4{
+      font-size: 20px;
+      width: 85%;
+    }
+    div.tastotutela_primula{
+      width: 85%;
+      margin-top: 20px;
+    }
+
+    div.tastotutela_primula a{
+      font-size: 14px;
+    }
+ }
+
+/*ZELKOVA*/
+.introzelkova_img {
+    margin: auto;
+    position: relative;
+    max-width: 100%;
+    text-align: left;
+    color: white;
+    
+  }
+
+  .introzelkova_img img{
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    object-fit: cover;
+    object-position: 15% 45%;
+     transform: scaleX(-1);
+    
+  }
+.intro_zelkova{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+    flex-direction: row;
+    gap: 150px;
+    align-items: center;
+    align-content: center;
+    margin-top: 50px;
+    border-bottom: #E19F22 solid 3px;
+    margin-bottom: 50px;
+    
+ }
+
+  .introduzione_zelkova p{
+  font-size: 16px;
+  line-height: 1.4;
+  width: 70%;
+  margin-bottom: 50px;
+  letter-spacing: 0.01rem;
+ }
+
+ .introduzione_zelkova h3{
+  color: #3B6148;
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+ }
+
+ .info_zelkova {
+  margin-bottom: 50px;
+  width: 100%;
+ }
+
+ .info_zelkova h2{
+  font-size: 12px;
+  font-weight: bold;
+  color: #3B6148;
+  width: 100%;
+  line-height: 1.4;
+ }
+
+ .info_zelkova p{
+  padding-bottom: 10px;
+  font-size: 12px;
+  margin-bottom: 15px;
+  border-bottom: #E19F22 solid 1px;
+  font-weight: 400;
+  letter-spacing: 0.01rem;
+ }
+
+ .testi_zelkova{
+  
+  max-width: 1100px;
+  margin: 150px auto;
+  display: flex;
+  
+  margin-bottom: 100px;
+ }
+
+ .titoli_zelkova h3{
+   color: #3B6148;
+  font-size: 24px;
+  line-height: 1.4;
+  margin: auto;
+  
+  
+ }
+
+ .paragrafi_zelkova p{
+  font-size: 16px;
+  line-height: 1.4;
+  width: 60%;
+  margin-bottom: 40px;
+  letter-spacing: 0.01rem;
+  justify-self: end;
+  
+ }
+
+ .img_zelkova {
+  max-width: 900px;
+    margin: auto ;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+
+ }
+
+ .img_zelkova img{
+  margin: 0 auto;
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+ }
+
+ .linea_zelkova{
+  border-top: #E19F22 solid 3px;
+  max-width: 1100px;
+  margin: auto;
+ }
+
+ .tutela_zelkova {
+ max-width: 750px;
+ margin: auto;
+
+ 
+  
+ }
+
+ .tutela_zelkova h4{
+  font-size: 24px;
+  color: #3B6148;
+  text-align: left;
+  line-height: 3;
+ margin: auto;
+  width: 70%;
+  margin-top: 50px;
+ }
+
+ .tutela_zelkova p{
+  margin: auto;
+  font-size: 16px;
+  width: 70%;
+  line-height: 1.5;
+
+  margin-bottom: 20px;
+ 
+  
+ }
+ .tastotutela_zelkova {
+ margin: auto;
+ display: flex;
+ width: 70%;
+ }
+
+.tastotutela_zelkova a{
+    background-color: #E19F22;
+    padding: 3px 3px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    width: 23px;
+    border-radius: 2px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #3B6148;
+     transition: .2s;
+     font-weight: bold;
+    
+     
+    
+     
+}
+
+.tastotutela_zelkova a:after{
+    content: 'Scopri';
+    font-weight: normal;
+    position: relative;
+    left: -10px;
+    opacity: 0;
+    transition: 0.4s;
+
+}
+
+.tastotutela_zelkova a:hover:after{
+    left: 0px;
+    opacity: 1;
+    background-color: #E19F22;
+    padding: 3px 4px;
+    padding-top: 3px;
+    padding-bottom: 6px;
+    border-radius: 2px;
+
+}
+  @media (max-width: 800px){
+
+    section.introzelkova_img img{
+        height: 200px;
+        object-position: 5% 70%;
+      }
+section.intro_zelkova {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 10px;
+  }
+
+  div.info_zelkova{
+    margin-bottom: 15px;
+    margin-top: 10px;
+   
+    
+    
+  }
+
+  div.info_zelkova h2, div.info_zelkova p{
+    margin: auto;
+    padding-left: 30px;
+    padding-top: 5px;
+    border-bottom: 0;
+    max-width: 70%;
+    
+  }
+
+  div.info_zelkova p{
+   border-bottom: solid #E19F22 1px;
+   max-width: 70%;
+  }
+  div.introduzione_zelkova  {
+    margin: auto;
+    
+    
+  }
+
+   div.introduzione_zelkova p{
+    font-size: 14px;
+    width: 75%;
+    border-bottom: #E19F22 solid 2px;
+    padding-bottom: 20px;
+    margin: auto;
+    
+   }
+
+    div.introduzione_zelkova h3{
+      font-size: 20px;
+      margin: auto;
+      padding-bottom: 15px;
+      width: 75%;
+      margin-top: 30px;
+    }
+
+    section.testi_zelkova {
+      margin-top: 50px;
+      
+     
+    }
+
+    section.intro_zelkova{
+      border-bottom:none;
+    
+    }
+
+
+    section.testi_zelkova{
+      max-width: 100%;
+      display:grid;
+      margin-bottom: 40px;
+    }
+    div.titoli_zelkova h3{
+      font-size: 20px;
+      display: flex;
+      width: 75%;
+      margin: auto;
+      margin-bottom: 15px;
+     
+    }
+
+    div.paragrafi_zelkova p{
+      font-size: 14px;
+      width: 75%;
+      display: flex;
+      margin: auto;
+      margin-bottom: 15px;
+    }
+
+ section.img_zelkova{
+  margin-bottom: 50px;
+ }
+    section.img_zelkova img{
+      width: 40vw;
+      height: 40vw;
+      
+      
+    }
+
+    div.linea_zelkova {
+      width: 75%;
+      margin: auto;
+    }
+
+     section.tutela_zelkova{
+      width: 85%;
+      padding: 25px;
+    }
+
+    section.tutela_zelkova p{
+      font-size: 14px;
+      width: 75%;
+    }
+
+    section.tutela_zelkova h4{
+      font-size: 20px;
+      width: 75%;
+    }
+    div.tastotutela_zelkova{
+      width: 75%;
+      margin-top: 20px;
+    }
+
+    div.tastotutela_zelkova a{
+      font-size: 14px;
+    }
+ }
+
+/*ABETE*/
+.introabete_img {
+    margin: auto;
+    position: relative;
+    max-width: 100%;
+    text-align: left;
+    color: white;
+    
+  }
+
+  .introabete_img img{
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    object-fit: cover;
+    object-position: 20% 50%;
+    filter: brightness(80%);
+     
+    
+  }
+.intro_abete{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+    flex-direction: row;
+    gap: 150px;
+    align-items: center;
+    align-content: center;
+    margin-top: 50px;
+    border-bottom: #E19F22 solid 3px;
+    margin-bottom: 50px;
+    
+ }
+
+  .introduzione_abete p{
+  font-size: 16px;
+  line-height: 1.4;
+  width: 70%;
+  margin-bottom: 50px;
+  letter-spacing: 0.01rem;
+ }
+
+ .introduzione_abete h3{
+  color: #3B6148;
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+ }
+
+ .info_abete {
+  margin-bottom: 50px;
+  width: 100%;
+ }
+
+ .info_abete h2{
+  font-size: 12px;
+  font-weight: bold;
+  color: #3B6148;
+  width: 100%;
+  line-height: 1.4;
+ }
+
+ .info_abete p{
+  padding-bottom: 10px;
+  font-size: 12px;
+  margin-bottom: 15px;
+  border-bottom: #E19F22 solid 1px;
+  font-weight: 400;
+  letter-spacing: 0.01rem;
+ }
+
+ .testi_abete{
+  
+  max-width: 1100px;
+  margin: 150px auto;
+  display: flex;
+  
+  margin-bottom: 100px;
+ }
+
+ .titoli_abete h3{
+   color: #3B6148;
+  font-size: 24px;
+  line-height: 1.4;
+  margin: auto;
+  
+  
+ }
+
+ .paragrafi_abete p{
+  font-size: 16px;
+  line-height: 1.4;
+  width: 60%;
+  margin-bottom: 40px;
+  letter-spacing: 0.01rem;
+  justify-self: end;
+  
+ }
+
+ .img_abete {
+  max-width: 900px;
+    margin: auto ;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+
+ }
+
+ .img_abete img{
+  margin: 0 auto;
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+ }
+
+ .linea_abete{
+  border-top: #E19F22 solid 3px;
+  max-width: 1100px;
+  margin: auto;
+ }
+
+ .tutela_abete {
+ max-width: 750px;
+ margin: auto;
+
+ 
+  
+ }
+
+ .tutela_abete h4{
+  font-size: 24px;
+  color: #3B6148;
+  text-align: left;
+  line-height: 3;
+ margin: auto;
+  width: 70%;
+  margin-top: 50px;
+ }
+
+ .tutela_abete p{
+  margin: auto;
+  font-size: 16px;
+  width: 70%;
+  line-height: 1.5;
+
+  margin-bottom: 20px;
+ 
+  
+ }
+ .tastotutela_abete {
+ margin: auto;
+ display: flex;
+ width: 70%;
+ }
+
+.tastotutela_abete a{
+    background-color: #E19F22;
+    padding: 3px 3px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    width: 23px;
+    border-radius: 2px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #3B6148;
+     transition: .2s;
+     font-weight: bold;
+    
+     
+    
+     
+}
+
+.tastotutela_abete a:after{
+    content: 'Scopri';
+    font-weight: normal;
+    position: relative;
+    left: -10px;
+    opacity: 0;
+    transition: 0.4s;
+
+}
+
+.tastotutela_abete a:hover:after{
+    left: 0px;
+    opacity: 1;
+    background-color: #E19F22;
+    padding: 3px 4px;
+    padding-top: 3px;
+    padding-bottom: 6px;
+    border-radius: 2px;
+
+}
+
+  @media (max-width: 800px){
+
+    section.introabete_img img{
+        height: 200px;
+        object-position: 5% 70%;
+      }
+section.intro_abete {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 10px;
+  }
+
+  div.info_abete{
+    margin-bottom: 15px;
+    margin-top: 10px;
+   
+    
+    
+  }
+
+  div.info_abete h2, div.info_abete p{
+    margin: auto;
+    padding-left: 30px;
+    padding-top: 5px;
+    border-bottom: 0;
+    max-width: 70%;
+    
+  }
+
+  div.info_abete p{
+   border-bottom: solid #E19F22 1px;
+   max-width: 70%;
+  }
+  div.introduzione_abete  {
+    margin: auto;
+    
+    
+  }
+
+   div.introduzione_abete p{
+    font-size: 14px;
+    width: 75%;
+    border-bottom: #E19F22 solid 2px;
+    padding-bottom: 20px;
+    margin: auto;
+    
+   }
+
+    div.introduzione_abete h3{
+      font-size: 20px;
+      margin: auto;
+      padding-bottom: 15px;
+      width: 75%;
+      margin-top: 30px;
+    }
+
+    section.testi_abete {
+      margin-top: 50px;
+      
+     
+    }
+
+    section.intro_abete{
+      border-bottom:none;
+    
+    }
+
+
+    section.testi_abete{
+      max-width: 100%;
+      display:grid;
+      margin-bottom: 40px;
+    }
+    div.titoli_abete h3{
+      font-size: 20px;
+      display: flex;
+      width: 75%;
+      margin: auto;
+      margin-bottom: 15px;
+     
+    }
+
+    div.paragrafi_abete p{
+      font-size: 14px;
+      width: 75%;
+      display: flex;
+      margin: auto;
+      margin-bottom: 15px;
+    }
+
+ section.img_abete{
+  margin-bottom: 50px;
+ }
+    section.img_abete img{
+      width: 40vw;
+      height: 40vw;
+      
+      
+    }
+
+    div.linea_abete {
+      width: 75%;
+      margin: auto;
+    }
+
+     section.tutela_abete{
+      width: 85%;
+      padding: 25px;
+    }
+
+    section.tutela_abete p{
+      font-size: 14px;
+      width: 85%;
+    }
+
+    section.tutela_abete h4{
+      font-size: 20px;
+      width: 85%;
+    }
+    div.tastotutela_abete{
+      width: 85%;
+      margin-top: 20px;
+    }
+
+    div.tastotutela_abete a{
+      font-size: 14px;
+    }
+ }
+
+/*RIBES*/
+.introribes_img {
+    margin: auto;
+    position: relative;
+    max-width: 100%;
+    text-align: left;
+    color: white;
+    
+  }
+
+  .introribes_img img{
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    object-fit: cover;
+    object-position: 15% 50%;
+    filter: brightness(80%);
+    
+  }
+.intro_ribes{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+    flex-direction: row;
+    gap: 150px;
+    align-items: center;
+    align-content: center;
+    margin-top: 50px;
+    border-bottom: #E19F22 solid 3px;
+    margin-bottom: 50px;
+    
+ }
+
+  .introduzione_ribes p{
+  font-size: 16px;
+  line-height: 1.4;
+  width: 70%;
+  margin-bottom: 50px;
+  letter-spacing: 0.01rem;
+ }
+
+ .introduzione_ribes h3{
+  color: #3B6148;
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+ }
+
+ .info_ribes {
+  margin-bottom: 50px;
+  width: 100%;
+ }
+
+ .info_ribes h2{
+  font-size: 12px;
+  font-weight: bold;
+  color: #3B6148;
+  width: 100%;
+  line-height: 1.4;
+ }
+
+ .info_ribes p{
+  padding-bottom: 10px;
+  font-size: 12px;
+  margin-bottom: 15px;
+  border-bottom: #E19F22 solid 1px;
+  font-weight: 400;
+  letter-spacing: 0.01rem;
+ }
+
+ .testi_ribes{
+  
+  max-width: 1100px;
+  margin: 150px auto;
+  display: flex;
+  
+  margin-bottom: 100px;
+ }
+
+ .titoli_ribes h3{
+   color: #3B6148;
+  font-size: 24px;
+  line-height: 1.4;
+  margin: auto;
+  
+  
+ }
+
+ .paragrafi_ribes p{
+  font-size: 16px;
+  line-height: 1.4;
+  width: 60%;
+  margin-bottom: 40px;
+  letter-spacing: 0.01rem;
+  justify-self: end;
+  
+ }
+
+ .img_ribes {
+  max-width: 900px;
+    margin: auto ;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+
+ }
+
+ .img_ribes img{
+  margin: 0 auto;
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+ }
+
+ .linea_ribes{
+  border-top: #E19F22 solid 3px;
+  max-width: 1100px;
+  margin: auto;
+ }
+
+ .tutela_ribes {
+ max-width: 750px;
+ margin: auto;
+
+ 
+  
+ }
+
+ .tutela_ribes h4{
+  font-size: 24px;
+  color: #3B6148;
+  text-align: left;
+  line-height: 3;
+ margin: auto;
+  width: 70%;
+  margin-top: 50px;
+ }
+
+ .tutela_ribes p{
+  margin: auto;
+  font-size: 16px;
+  width: 70%;
+  line-height: 1.5;
+
+  margin-bottom: 20px;
+ 
+  
+ }
+ .tastotutela_ribes {
+ margin: auto;
+ display: flex;
+ width: 70%;
+ }
+
+.tastotutela_ribes a{
+    background-color: #E19F22;
+    padding: 3px 3px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    width: 23px;
+    border-radius: 2px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #3B6148;
+     transition: .2s;
+     font-weight: bold;
+    
+     
+    
+     
+}
+
+.tastotutela_ribes a:after{
+    content: 'Scopri';
+    font-weight: normal;
+    position: relative;
+    left: -10px;
+    opacity: 0;
+    transition: 0.4s;
+
+}
+
+.tastotutela_ribes a:hover:after{
+    left: 0px;
+    opacity: 1;
+    background-color: #E19F22;
+    padding: 3px 4px;
+    padding-top: 3px;
+    padding-bottom: 6px;
+    border-radius: 2px;
+
+}
+
+  @media (max-width: 800px){
+
+    section.introribes_img img{
+        height: 200px;
+        object-position: 5% 70%;
+        filter: brightness(75%);
+      }
+section.intro_ribes {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 10px;
+  }
+
+  div.info_ribes{
+    margin-bottom: 15px;
+    margin-top: 10px;
+   
+    
+    
+  }
+
+  div.info_ribes h2, div.info_ribes p{
+    margin: auto;
+    padding-left: 30px;
+    padding-top: 5px;
+    border-bottom: 0;
+    max-width: 70%;
+    
+  }
+
+  div.info_ribes p{
+   border-bottom: solid #E19F22 1px;
+   max-width: 70%;
+  }
+  div.introduzione_ribes  {
+    margin: auto;
+    
+    
+  }
+
+   div.introduzione_ribes p{
+    font-size: 14px;
+    width: 75%;
+    border-bottom: #E19F22 solid 2px;
+    padding-bottom: 20px;
+    margin: auto;
+    
+   }
+
+    div.introduzione_ribes h3{
+      font-size: 20px;
+      margin: auto;
+      padding-bottom: 15px;
+      width: 75%;
+      margin-top: 30px;
+    }
+
+    section.testi_ribes {
+      margin-top: 50px;
+      
+     
+    }
+
+    section.intro_ribes{
+      border-bottom:none;
+    
+    }
+
+
+    section.testi_ribes{
+      max-width: 100%;
+      display:grid;
+      margin-bottom: 40px;
+    }
+    div.titoli_ribes h3{
+      font-size: 20px;
+      display: flex;
+      width: 75%;
+      margin: auto;
+      margin-bottom: 15px;
+     
+    }
+
+    div.paragrafi_ribes p{
+      font-size: 14px;
+      width: 75%;
+      display: flex;
+      margin: auto;
+      margin-bottom: 15px;
+    }
+
+ section.img_ribes{
+  margin-bottom: 50px;
+ }
+    section.img_ribes img{
+      width: 40vw;
+      height: 40vw;
+      
+      
+    }
+
+    div.linea_ribes {
+      width: 75%;
+      margin: auto;
+    }
+
+     section.tutela_ribes{
+      width: 85%;
+      padding: 25px;
+    }
+
+    section.tutela_ribes p{
+      font-size: 14px;
+      width: 85%;
+    }
+
+    section.tutela_ribes h4{
+      font-size: 20px;
+      width: 85%;
+    }
+    div.tastotutela_ribes{
+      width: 85%;
+      margin-top: 20px;
+    }
+
+    div.tastotutela_ribes a{
+      font-size: 14px;
+    }
+ }
+
+/*COSA PUOI FARE TU*/
+
+.introcosafare_img {
+    margin: auto;
+    position: relative;
+    max-width: 100%;
+    text-align: left;
+    color: white;
+
+  }
+
+  .introcosafare_img img{
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    object-fit: cover;
+
+
+
+  }
+ .frase_cosafare{
+    max-width: 950px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 110px;
+    margin-top: 60px;
+
+  }
+
+  .linee{
+    margin-top: 10px; 
+    border-bottom: #E19F22 solid 2px;
+
+  }
+
+  .frase_cosafare p{
+font-size: 24px;
+text-align: center;
+letter-spacing: 0.02em;
+color: #3B6148;
+font-weight:normal;
+}
+
+ .testo_cosafare {
+ max-width: 750px;
+ margin: auto;
+
+ 
+
+ }
+
+ .testo_cosafare h2{
+  font-size: 24px;
+  color: #3B6148;
+  text-align: left;
+  line-height: 3;
+ 
+  width: 70%;
+  margin-top: 50px;
+ }
+
+ .testo_cosafare p{
+
+  font-size: 16px;
+  width: 70%;
+  line-height: 1.5;
+  margin-bottom: 20px;
+ 
+
+ }
+
+ .img_cosafare {
+  max-width: 750px;
+  margin-top: 100px;
+
+ }
+
+ .img_cosafare img{
+  border-radius: 20px;
+  width: 650px;
+  object-fit: cover;
+  
+ }
+
+.linea_cosafare{
+  border-top: #E19F22 solid 3px;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+ }
+
+ .ecosostenibile{
+   max-width: 750px;
+ margin: auto;
+ }
+
+ .ecosostenibile h3{
+   font-size: 24px;
+  color: #3B6148;
+  text-align: left;
+  line-height: 3;
+  width: 60%;
+  margin-top: 50px;
+  margin: auto;
+ }
+
+ .ecosostenibile p{
+
+  font-size: 16px;
+  width: 60%;
+  line-height: 1.5;
+  margin-bottom: 20px;
+ margin: auto;
+ }
+
+ @media (max-width:800px) {
+
+   section.introcosafare_img img{
+      height: 200px;
+    }
+
+    section.frase_cosafare {
+      margin-bottom: 20px;
+    }
+
+    section.frase_cosafare p{
+      font-size: 16px;
+    }
+  
+    section.testo_cosafare {
+      margin-top: 20px;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+
+    section.testo_cosafare h2{
+      margin: auto;
+      font-size: 20px;
+      width: 75%;
+    }
+
+    section.testo_cosafare p{
+      font-size: 14px;
+      margin: auto;
+      margin-bottom: 15px;
+      width: 75%;
+    }
+
+    div.img_cosafare {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    div.img_cosafare img{
+      width: 70%;
+      margin: auto;
+      
+    }
+
+    div.linea_cosafare{
+      width: 75%;
+      margin-bottom: 30px;
+
+    }
+
+    section.ecosostenibile {
+      margin-top: 20px;
+    }
+
+    section.ecosostenibile h3{
+      margin-bottom: 20px;
+      font-size: 20px;
+      width: 70%;
+      margin: auto;
+    }
+
+    section.ecosostenibile p{
+      font-size: 14px;
+      width: 70%;
+    }
+ }
