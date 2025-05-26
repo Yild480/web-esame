@@ -92,6 +92,10 @@ header li a:hover{
     object-position: 15% 63%;
   }
 
+  #header_img{
+    object-position: 15% 64%;
+  }
+
   .intro_frase {
     position: absolute;
     line-height: 1.2;
@@ -2679,6 +2683,7 @@ section.intro_zelkova {
   width: 350px;
   object-fit: cover;
   border-radius: 20px;
+  filter: brightness(95%);
  }
 
  .linea_abete{
