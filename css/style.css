@@ -27,7 +27,7 @@ header{
     max-width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 15px 20px;
     background-color: #3B6148;
     align-items: center;
     margin: auto;
@@ -66,7 +66,7 @@ header p{
 }
 header ul{
     font-family: "Lato";
-    font-size: 16px;
+    font-size: 20px;
     font-weight: medium;
    
 }
@@ -113,7 +113,7 @@ header li a:hover{
   }
 
   div.testo_home p{
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.4;
     width: 50%;
     
@@ -127,6 +127,7 @@ header li a:hover{
     max-width: 1100px;
     margin: auto;
     margin-bottom: 15px;
+    padding: 15px;
    
 }
 
@@ -181,6 +182,7 @@ header li a:hover{
   max-width: 1100px;
   margin: auto;
   gap: 15px;
+  padding: 15px;
   
 }
 
@@ -245,6 +247,7 @@ footer ul{
     color: #ffffff;
     font-family: 'Lato';
     font-weight: bold;
+    padding: 10px;
 }
 footer nav ul {
     display: flex;
@@ -252,8 +255,12 @@ footer nav ul {
     gap: 60px;
     color: #ffffff;
     font-family: "Lato";
-    font-size: 16px;
+    font-size: 20px;
     font-weight: normal;
+}
+
+footer p{
+  font-size: 20px;
 }
 
 @media (max-width: 800px){
@@ -275,15 +282,21 @@ header {
     
 
     nav ul {
-        padding: 4px;
-         
-      
+        
+        font-size: 16px;      
     }
 
+
     nav ul a {
-        font-size: 16px; 
-            
+        font-size: 16px;          
     }
+
+    nav li p{
+      font-size: 16px;
+    }
+     footer p {
+      font-size: 16px;
+     }
 
    
 
@@ -301,16 +314,16 @@ header {
     }
 
     div.testo_home h2{
-      font-size: 16px;
+      font-size: 20px;
       margin: auto;
       width: 100%;
     }
 
   
 div.testo_home p{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.4;
-    width: 75%;
+    width: 80%;
     
   }
 
@@ -352,24 +365,7 @@ div.testo_home p{
 
 /*PAGINA ANIMALI*/
 
-html {
-    box-sizing: border-box; 
-}
 
-body {
-margin: 0;
-font-family: "Lato";
-}
-
-h1, h2, h3, h4, h5, h6, p, ul, ol {
-margin: 0;
-padding: 0;
-}
-
-img {
-max-width: 100%;
-display: block;
-}
 
 .contenitore {
 max-width: 1100px; 
@@ -424,13 +420,6 @@ ul.menu li a:hover {
   text-decoration: underline;
 }
 
- /* .introanimali_frase {
-    position: relative;
-    line-height: 1.2;
-    bottom: 90px;
-    left: 14vw;
-    font-size: 24px;
-  }*/
 
   .intro_frase {
     position: absolute;
@@ -469,6 +458,7 @@ font-weight:normal;
     max-width: 950px;
     margin: auto;
     margin-bottom: 150px;
+    padding: 15px;
     
     
 
@@ -491,9 +481,9 @@ font-weight:normal;
   }
 
   div.testo_animali p{
-    width: 80%;
+    width: 90%;
     line-height: 1.3;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 15px;
    
     
@@ -558,6 +548,7 @@ font-weight:normal;
     max-width: 950px;
     margin: auto;
     margin-bottom: 150px;
+    padding: 15px;
     
 
   }
@@ -582,9 +573,9 @@ font-weight:normal;
   }
 
   div.testo_animalireverse p{
-    width: 55%;
+    width: 75%;
     line-height: 1.3;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 15px;
     
     
@@ -601,12 +592,10 @@ font-weight:normal;
  /*Orso*/
  .intro_orso{
   max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-    flex-direction: row;
-    gap: 150px;
-    align-items: center;
-    align-content: center;
+  margin: auto;
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+
     margin-top: 50px;
     border-bottom: #E19F22 solid 3px;
     margin-bottom: 50px;
@@ -614,12 +603,20 @@ font-weight:normal;
     
  }
 
+ 
+
+ 
+
  .introduzione_orso p{
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.4;
-  width: 70%;
+  
   margin-bottom: 50px;
   letter-spacing: 0.01rem;
+  
+  
+  
+  
  }
 
  .introduzione_orso h3{
@@ -627,18 +624,26 @@ font-weight:normal;
   font-size: 24px;
   line-height: 1.4;
   margin-bottom: 10px;
+  
+  
  }
 
  .info_orso {
+  align-self: center;
   margin-bottom: 50px;
-  width: 100%;
+  
+  padding-left: 10px;
+ 
+  
+  
+  
  }
 
  .info_orso h2{
   font-size: 12px;
   font-weight: bold;
   color: #3B6148;
-  width: 100%;
+  
   line-height: 1.4;
  }
 
@@ -649,14 +654,19 @@ font-weight:normal;
   border-bottom: #E19F22 solid 1px;
   font-weight: 400;
   letter-spacing: 0.01rem;
+  width: 60%;
  }
+
+ .introduzione_orso{
+  align-content: center;
+}
 
  .testi_orso{
   
   max-width: 1100px;
   margin: 150px auto;
   display: flex;
-  
+  padding: 10px;
   margin-bottom: 100px;
  }
 
@@ -670,7 +680,7 @@ font-weight:normal;
  }
 
  .paragrafi_orso p{
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.4;
   width: 60%;
   margin-bottom: 40px;
@@ -722,7 +732,7 @@ font-weight:normal;
 
  .tutela_orso p{
   color: #ffffff;
-  font-size: 16px;
+  font-size: 20px;
   width: 70%;
  margin-bottom: 30px;
   line-height: 1.5;
@@ -774,7 +784,7 @@ section.intro_orso {
     padding-left: 30px;
     padding-top: 5px;
     border-bottom: 0;
-    max-width: 70%;
+    width: 70%;
     
   }
 
@@ -789,7 +799,7 @@ section.intro_orso {
   }
 
    div.introduzione_orso p{
-    font-size: 14px;
+    font-size: 16px;
     width: 75%;
     border-bottom: #E19F22 solid 2px;
     padding-bottom: 20px;
@@ -832,7 +842,7 @@ section.intro_orso {
     }
 
     div.paragrafi_orso p{
-      font-size: 14px;
+      font-size: 16px;
       width: 75%;
       display: flex;
       margin: auto;
@@ -860,24 +870,25 @@ section.intro_orso {
     }
 
     div.testotutela_orso p{
-      font-size: 14px;
+      font-size: 16px;
       width: 80%;
     }
 
     div.testotutela_orso h4{
-      font-size: 16px;
+      font-size: 20px;
       width: 80%;
     }
     div.tastotutela_orso{
       width: 80%;
       margin-top: 20px;
+      padding-bottom: 10px;
     }
 
     div.tastotutela_orso a{
-      font-size: 14px;
+      font-size: 16px;
     }
  }
-
+/*Media animali*/
  @media  (max-width: 800px) {
 
   ul.menu li, ul.menu li a{
@@ -888,7 +899,7 @@ section.intro_orso {
     margin-bottom: 30px;
   }
   section.frase_animali p {
-    font-size: 16px;
+    font-size: 20px;
     
   }
 
@@ -917,7 +928,7 @@ section.intro_orso {
   div.testo_animali p{
     width: 70%;
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     margin: auto;
     line-height: 1.4
 
@@ -963,7 +974,7 @@ section.intro_orso {
   div.testo_animalireverse p{
     width: 70%;
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     margin: auto;
     line-height: 1.4
 
@@ -1022,23 +1033,22 @@ section.intro_orso {
   }
 .intro_capovaccaio{
   max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-    flex-direction: row;
-    gap: 150px;
-    align-items: center;
-    align-content: center;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+ 
     margin-top: 50px;
     border-bottom: #E19F22 solid 3px;
     margin-bottom: 50px;
+   
     
     
  }
 
  .introduzione_capovaccaio p{
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.4;
-  width: 70%;
+  
   margin-bottom: 50px;
   letter-spacing: 0.01rem;
  }
@@ -1052,14 +1062,15 @@ section.intro_orso {
 
  .info_capovaccaio {
   margin-bottom: 50px;
-  width: 100%;
+  align-self: center;
+  padding-left: 10px;
  }
 
  .info_capovaccaio h2{
   font-size: 12px;
   font-weight: bold;
   color: #3B6148;
-  width: 100%;
+  
   line-height: 1.4;
  }
 
@@ -1070,10 +1081,13 @@ section.intro_orso {
   border-bottom: #E19F22 solid 1px;
   font-weight: 400;
   letter-spacing: 0.01rem;
+  width: 60%;
  }
-
+.introduzione_capovaccaio{
+  align-content: center;
+}
  .testi_capovaccaio{
-  
+  padding: 10px;
   max-width: 1100px;
   margin: 150px auto;
   display: flex;
@@ -1091,7 +1105,7 @@ section.intro_orso {
  }
 
  .paragrafi_capovaccaio p{
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.4;
   width: 60%;
   margin-bottom: 40px;
@@ -1145,7 +1159,7 @@ section.intro_orso {
 
  .tutela_capovaccaio p{
   color: #ffffff;
-  font-size: 16px;
+  font-size: 20px;
   width: 70%;
  margin-bottom: 30px;
   line-height: 1.5;
@@ -1200,7 +1214,7 @@ section.intro_capovaccaio {
     padding-left: 30px;
     padding-top: 5px;
     border-bottom: 0;
-    max-width: 70%;
+    width: 70%;
     
   }
 
@@ -1215,7 +1229,7 @@ section.intro_capovaccaio {
   }
 
    div.introduzione_capovaccaio p{
-    font-size: 14px;
+    font-size: 16px;
     width: 75%;
     border-bottom: #E19F22 solid 2px;
     padding-bottom: 20px;
@@ -1258,7 +1272,7 @@ section.intro_capovaccaio {
     }
 
     div.paragrafi_capovaccaio p{
-      font-size: 14px;
+      font-size: 16px;
       width: 75%;
       display: flex;
       margin: auto;
@@ -1286,7 +1300,7 @@ section.intro_capovaccaio {
     }
 
     div.testotutela_capovaccaio p{
-      font-size: 14px;
+      font-size: 16px;
       width: 80%;
     }
 
@@ -1300,22 +1314,20 @@ section.intro_capovaccaio {
     }
 
     div.tastotutela_capovaccaio a{
-      font-size: 14px;
+      font-size: 16px;
     }
  }
 
 /*SALAMANDRA*/
  .intro_salamandra{
   max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-    flex-direction: row;
-    gap: 150px;
-    align-items: center;
-    align-content: center;
+  margin: auto;
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
     margin-top: 50px;
     border-bottom: #E19F22 solid 3px;
     margin-bottom: 50px;
+    padding: 10px;
     
     
  }
@@ -1342,9 +1354,9 @@ section.intro_capovaccaio {
   }
 
  .introduzione_salamandra p{
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.4;
-  width: 70%;
+  
   margin-bottom: 50px;
   letter-spacing: 0.01rem;
  }
@@ -1358,14 +1370,15 @@ section.intro_capovaccaio {
 
  .info_salamandra{
   margin-bottom: 50px;
-  width: 100%;
+  padding-left: 10px;
+  align-self: center;
  }
 
  .info_salamandra h2{
   font-size: 12px;
   font-weight: bold;
   color: #3B6148;
-  width: 100%;
+  
   line-height: 1.4;
  }
 
@@ -1376,10 +1389,11 @@ section.intro_capovaccaio {
   border-bottom: #E19F22 solid 1px;
   font-weight: 400;
   letter-spacing: 0.01rem;
+  width: 60%;
  }
 
  .testi_salamandra{
-  
+  padding: 10px;
   max-width: 1100px;
   margin: 150px auto;
   display: flex;
@@ -1397,7 +1411,7 @@ section.intro_capovaccaio {
  }
 
  .paragrafi_salamandra p{
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.4;
   width: 60%;
   margin-bottom: 40px;
@@ -1450,7 +1464,7 @@ section.intro_capovaccaio {
 
  .tutela_salamandra p{
   color: #ffffff;
-  font-size: 16px;
+  font-size: 20px;
   width: 70%;
  margin-bottom: 30px;
   line-height: 1.5;
@@ -1504,7 +1518,7 @@ section.intro_salamandra {
     padding-left: 30px;
     padding-top: 5px;
     border-bottom: 0;
-    max-width: 70%;
+    width: 70%;
     
   }
 
@@ -1519,7 +1533,7 @@ section.intro_salamandra {
   }
 
    div.introduzione_salamandra p{
-    font-size: 14px;
+    font-size: 16px;
     width: 75%;
     border-bottom: #E19F22 solid 2px;
     padding-bottom: 20px;
@@ -1562,7 +1576,7 @@ section.intro_salamandra {
     }
 
     div.paragrafi_salamandra p{
-      font-size: 14px;
+      font-size: 16px;
       width: 75%;
       display: flex;
       margin: auto;
@@ -1590,7 +1604,7 @@ section.intro_salamandra {
     }
 
     div.testotutela_salamandra p{
-      font-size: 14px;
+      font-size: 16px;
       width: 80%;
     }
 
@@ -1604,7 +1618,7 @@ section.intro_salamandra {
     }
 
     div.tastotutela_salamandra a{
-      font-size: 14px;
+      font-size: 16px;
     }
  }
 
@@ -1612,15 +1626,14 @@ section.intro_salamandra {
 /*ORECCHIONE*/
  .intro_orecchione{
   max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-    flex-direction: row;
-    gap: 150px;
-    align-items: center;
-    align-content: center;
+  margin: auto;
+  margin: auto;
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
     margin-top: 50px;
     border-bottom: #E19F22 solid 3px;
     margin-bottom: 50px;
+    padding: 10px;
     
     
     
@@ -1647,9 +1660,9 @@ section.intro_salamandra {
   }
 
  .introduzione_orecchione p{
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.4;
-  width: 70%;
+  
   margin-bottom: 50px;
   letter-spacing: 0.01rem;
  }
@@ -1663,14 +1676,18 @@ section.intro_salamandra {
 
  .info_orecchione{
   margin-bottom: 50px;
-  width: 100%;
+ padding-left: 10px;
+ align-self: center;
+  
  }
-
+.introduzione_orecchione{
+  align-content: center;
+}
  .info_orecchione h2{
   font-size: 12px;
   font-weight: bold;
   color: #3B6148;
-  width: 100%;
+  
   line-height: 1.4;
  }
 
@@ -1681,10 +1698,11 @@ section.intro_salamandra {
   border-bottom: #E19F22 solid 1px;
   font-weight: 400;
   letter-spacing: 0.01rem;
+  width: 60%;
  }
 
  .testi_orecchione{
-  
+  padding: 10px;
   max-width: 1100px;
   margin: 150px auto;
   display: flex;
@@ -1702,7 +1720,7 @@ section.intro_salamandra {
  }
 
  .paragrafi_orecchione p{
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.4;
   width: 60%;
   margin-bottom: 40px;
@@ -1756,7 +1774,7 @@ section.intro_salamandra {
 
  .tutela_orecchione p{
   color: #ffffff;
-  font-size: 16px;
+  font-size: 20px;
   width: 70%;
  margin-bottom: 30px;
   line-height: 1.5;
@@ -1812,7 +1830,7 @@ section.intro_orecchione {
     padding-left: 30px;
     padding-top: 5px;
     border-bottom: 0;
-    max-width: 70%;
+    width: 70%;
     
   }
 
@@ -1827,7 +1845,7 @@ section.intro_orecchione {
   }
 
    div.introduzione_orecchione p{
-    font-size: 14px;
+    font-size: 16px;
     width: 75%;
     border-bottom: #E19F22 solid 2px;
     padding-bottom: 20px;
@@ -1870,7 +1888,7 @@ section.intro_orecchione {
     }
 
     div.paragrafi_orecchione p{
-      font-size: 14px;
+      font-size: 16px;
       width: 75%;
       display: flex;
       margin: auto;
@@ -1898,21 +1916,22 @@ section.intro_orecchione {
     }
 
     div.testotutela_orecchione p{
-      font-size: 14px;
-      width: 80%;
+      font-size: 16px;
+      width: 85%;
     }
 
     div.testotutela_orecchione h4{
       font-size: 16px;
-      width: 80%;
+      width: 85%;
     }
     div.tastotutela_orecchione{
-      width: 80%;
+      width: 85%;
       margin-top: 20px;
+      padding: 10px;
     }
 
     div.tastotutela_orecchione a{
-      font-size: 14px;
+      font-size: 16px;
     }
  }
 
@@ -1939,12 +1958,10 @@ section.intro_orecchione {
   }
 .intro_primula{
   max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-    flex-direction: row;
-    gap: 150px;
-    align-items: center;
-    align-content: center;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+   
     margin-top: 50px;
     border-bottom: #E19F22 solid 3px;
     margin-bottom: 50px;
@@ -1952,9 +1969,9 @@ section.intro_orecchione {
  }
 
   .introduzione_primula p{
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.4;
-  width: 70%;
+ 
   margin-bottom: 50px;
   letter-spacing: 0.01rem;
  }
@@ -1968,14 +1985,15 @@ section.intro_orecchione {
 
  .info_primula {
   margin-bottom: 50px;
-  width: 100%;
+  align-self: center;
+  padding-left: 10px;
  }
 
  .info_primula h2{
   font-size: 12px;
   font-weight: bold;
   color: #3B6148;
-  width: 100%;
+  
   line-height: 1.4;
  }
 
@@ -1986,10 +2004,11 @@ section.intro_orecchione {
   border-bottom: #E19F22 solid 1px;
   font-weight: 400;
   letter-spacing: 0.01rem;
+  width: 60%;
  }
 
  .testi_primula{
-  
+  padding: 10px;
   max-width: 1100px;
   margin: 150px auto;
   display: flex;
@@ -2007,7 +2026,7 @@ section.intro_orecchione {
  }
 
  .paragrafi_primula p{
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.4;
   width: 60%;
   margin-bottom: 40px;
@@ -2059,7 +2078,7 @@ section.intro_orecchione {
 
  .tutela_primula p{
   margin: auto;
-  font-size: 16px;
+  font-size: 20px;
   width: 70%;
   line-height: 1.5;
 
@@ -2128,6 +2147,7 @@ section.intro_primula {
   div.info_primula{
     margin-bottom: 15px;
     margin-top: 10px;
+    padding: 0;
    
     
     
@@ -2138,7 +2158,7 @@ section.intro_primula {
     padding-left: 30px;
     padding-top: 5px;
     border-bottom: 0;
-    max-width: 70%;
+    width: 70%;
     
   }
 
@@ -2265,22 +2285,20 @@ section.intro_primula {
   }
 .intro_zelkova{
   max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-    flex-direction: row;
-    gap: 150px;
-    align-items: center;
-    align-content: center;
+  margin: auto;
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
     margin-top: 50px;
     border-bottom: #E19F22 solid 3px;
     margin-bottom: 50px;
     
+    
  }
 
   .introduzione_zelkova p{
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.4;
-  width: 70%;
+  
   margin-bottom: 50px;
   letter-spacing: 0.01rem;
  }
@@ -2294,14 +2312,15 @@ section.intro_primula {
 
  .info_zelkova {
   margin-bottom: 50px;
-  width: 100%;
+  padding-left: 10px;
+  align-self: center;
  }
 
  .info_zelkova h2{
   font-size: 12px;
   font-weight: bold;
   color: #3B6148;
-  width: 100%;
+ 
   line-height: 1.4;
  }
 
@@ -2312,10 +2331,11 @@ section.intro_primula {
   border-bottom: #E19F22 solid 1px;
   font-weight: 400;
   letter-spacing: 0.01rem;
+  width: 60%;
  }
 
  .testi_zelkova{
-  
+  padding: 10px;
   max-width: 1100px;
   margin: 150px auto;
   display: flex;
@@ -2333,7 +2353,7 @@ section.intro_primula {
  }
 
  .paragrafi_zelkova p{
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.4;
   width: 60%;
   margin-bottom: 40px;
@@ -2379,14 +2399,14 @@ section.intro_primula {
   text-align: left;
   line-height: 3;
  margin: auto;
-  width: 70%;
+  width: 75%;
   margin-top: 50px;
  }
 
  .tutela_zelkova p{
   margin: auto;
-  font-size: 16px;
-  width: 70%;
+  font-size: 20px;
+  width: 75%;
   line-height: 1.5;
 
   margin-bottom: 20px;
@@ -2396,7 +2416,7 @@ section.intro_primula {
  .tastotutela_zelkova {
  margin: auto;
  display: flex;
- width: 70%;
+ width: 75%;
  }
 
 .tastotutela_zelkova a{
@@ -2453,6 +2473,7 @@ section.intro_zelkova {
   div.info_zelkova{
     margin-bottom: 15px;
     margin-top: 10px;
+    padding: 0;
    
     
     
@@ -2463,7 +2484,7 @@ section.intro_zelkova {
     padding-left: 30px;
     padding-top: 5px;
     border-bottom: 0;
-    max-width: 70%;
+    width: 70%;
     
   }
 
@@ -2478,7 +2499,7 @@ section.intro_zelkova {
   }
 
    div.introduzione_zelkova p{
-    font-size: 14px;
+    font-size: 16px;
     width: 75%;
     border-bottom: #E19F22 solid 2px;
     padding-bottom: 20px;
@@ -2521,7 +2542,7 @@ section.intro_zelkova {
     }
 
     div.paragrafi_zelkova p{
-      font-size: 14px;
+      font-size: 16px;
       width: 75%;
       display: flex;
       margin: auto;
@@ -2549,7 +2570,7 @@ section.intro_zelkova {
     }
 
     section.tutela_zelkova p{
-      font-size: 14px;
+      font-size: 16px;
       width: 75%;
     }
 
@@ -2591,12 +2612,9 @@ section.intro_zelkova {
   }
 .intro_abete{
   max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-    flex-direction: row;
-    gap: 150px;
-    align-items: center;
-    align-content: center;
+  margin: auto;
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
     margin-top: 50px;
     border-bottom: #E19F22 solid 3px;
     margin-bottom: 50px;
@@ -2604,9 +2622,9 @@ section.intro_zelkova {
  }
 
   .introduzione_abete p{
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.4;
-  width: 70%;
+  
   margin-bottom: 50px;
   letter-spacing: 0.01rem;
  }
@@ -2620,14 +2638,15 @@ section.intro_zelkova {
 
  .info_abete {
   margin-bottom: 50px;
-  width: 100%;
+  align-self: center;
+  padding-left: 10px;
  }
 
  .info_abete h2{
   font-size: 12px;
   font-weight: bold;
   color: #3B6148;
-  width: 100%;
+ 
   line-height: 1.4;
  }
 
@@ -2638,10 +2657,11 @@ section.intro_zelkova {
   border-bottom: #E19F22 solid 1px;
   font-weight: 400;
   letter-spacing: 0.01rem;
+  width: 60%;
  }
 
  .testi_abete{
-  
+  padding: 10px;
   max-width: 1100px;
   margin: 150px auto;
   display: flex;
@@ -2659,7 +2679,7 @@ section.intro_zelkova {
  }
 
  .paragrafi_abete p{
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.4;
   width: 60%;
   margin-bottom: 40px;
@@ -2706,14 +2726,14 @@ section.intro_zelkova {
   text-align: left;
   line-height: 3;
  margin: auto;
-  width: 70%;
+  width: 75%;
   margin-top: 50px;
  }
 
  .tutela_abete p{
   margin: auto;
-  font-size: 16px;
-  width: 70%;
+  font-size: 20px;
+  width: 75%;
   line-height: 1.5;
 
   margin-bottom: 20px;
@@ -2723,7 +2743,7 @@ section.intro_zelkova {
  .tastotutela_abete {
  margin: auto;
  display: flex;
- width: 70%;
+ width: 75%;
  }
 
 .tastotutela_abete a{
@@ -2781,6 +2801,7 @@ section.intro_abete {
   div.info_abete{
     margin-bottom: 15px;
     margin-top: 10px;
+    padding: 0;
    
     
     
@@ -2791,7 +2812,7 @@ section.intro_abete {
     padding-left: 30px;
     padding-top: 5px;
     border-bottom: 0;
-    max-width: 70%;
+    width: 70%;
     
   }
 
@@ -2806,7 +2827,7 @@ section.intro_abete {
   }
 
    div.introduzione_abete p{
-    font-size: 14px;
+    font-size: 16px;
     width: 75%;
     border-bottom: #E19F22 solid 2px;
     padding-bottom: 20px;
@@ -2849,7 +2870,7 @@ section.intro_abete {
     }
 
     div.paragrafi_abete p{
-      font-size: 14px;
+      font-size: 16px;
       width: 75%;
       display: flex;
       margin: auto;
@@ -2877,7 +2898,7 @@ section.intro_abete {
     }
 
     section.tutela_abete p{
-      font-size: 14px;
+      font-size: 16px;
       width: 85%;
     }
 
@@ -2891,7 +2912,7 @@ section.intro_abete {
     }
 
     div.tastotutela_abete a{
-      font-size: 14px;
+      font-size: 16px;
     }
  }
 
@@ -2918,22 +2939,20 @@ section.intro_abete {
   }
 .intro_ribes{
   max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-    flex-direction: row;
-    gap: 150px;
-    align-items: center;
-    align-content: center;
+  margin: auto;
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
     margin-top: 50px;
     border-bottom: #E19F22 solid 3px;
     margin-bottom: 50px;
+   
     
  }
 
   .introduzione_ribes p{
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.4;
-  width: 70%;
+ 
   margin-bottom: 50px;
   letter-spacing: 0.01rem;
  }
@@ -2947,14 +2966,15 @@ section.intro_abete {
 
  .info_ribes {
   margin-bottom: 50px;
-  width: 100%;
+ padding-left: 10px;
+ align-self: center;
  }
 
  .info_ribes h2{
   font-size: 12px;
   font-weight: bold;
   color: #3B6148;
-  width: 100%;
+ 
   line-height: 1.4;
  }
 
@@ -2965,10 +2985,11 @@ section.intro_abete {
   border-bottom: #E19F22 solid 1px;
   font-weight: 400;
   letter-spacing: 0.01rem;
+  width: 60%;
  }
 
  .testi_ribes{
-  
+  padding: 10px;
   max-width: 1100px;
   margin: 150px auto;
   display: flex;
@@ -2986,7 +3007,7 @@ section.intro_abete {
  }
 
  .paragrafi_ribes p{
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.4;
   width: 60%;
   margin-bottom: 40px;
@@ -3038,7 +3059,7 @@ section.intro_abete {
 
  .tutela_ribes p{
   margin: auto;
-  font-size: 16px;
+  font-size: 20px;
   width: 70%;
   line-height: 1.5;
 
@@ -3108,6 +3129,7 @@ section.intro_ribes {
   div.info_ribes{
     margin-bottom: 15px;
     margin-top: 10px;
+    padding: 0;
    
     
     
@@ -3118,7 +3140,7 @@ section.intro_ribes {
     padding-left: 30px;
     padding-top: 5px;
     border-bottom: 0;
-    max-width: 70%;
+    width: 70%;
     
   }
 
@@ -3133,7 +3155,7 @@ section.intro_ribes {
   }
 
    div.introduzione_ribes p{
-    font-size: 14px;
+    font-size: 16px;
     width: 75%;
     border-bottom: #E19F22 solid 2px;
     padding-bottom: 20px;
@@ -3176,7 +3198,7 @@ section.intro_ribes {
     }
 
     div.paragrafi_ribes p{
-      font-size: 14px;
+      font-size: 16px;
       width: 75%;
       display: flex;
       margin: auto;
@@ -3204,7 +3226,7 @@ section.intro_ribes {
     }
 
     section.tutela_ribes p{
-      font-size: 14px;
+      font-size: 16px;
       width: 85%;
     }
 
@@ -3218,7 +3240,7 @@ section.intro_ribes {
     }
 
     div.tastotutela_ribes a{
-      font-size: 14px;
+      font-size: 16px;
     }
  }
 
@@ -3287,7 +3309,7 @@ font-weight:normal;
 
  .testo_cosafare p{
 
-  font-size: 16px;
+  font-size: 20px;
   width: 70%;
   line-height: 1.5;
   margin-bottom: 20px;
@@ -3333,7 +3355,7 @@ font-weight:normal;
 
  .ecosostenibile p{
 
-  font-size: 16px;
+  font-size: 20px;
   width: 60%;
   line-height: 1.5;
   margin-bottom: 20px;
@@ -3351,7 +3373,7 @@ font-weight:normal;
     }
 
     section.frase_cosafare p{
-      font-size: 16px;
+      font-size: 20px;
     }
   
     section.testo_cosafare {
@@ -3367,7 +3389,7 @@ font-weight:normal;
     }
 
     section.testo_cosafare p{
-      font-size: 14px;
+      font-size: 16px;
       margin: auto;
       margin-bottom: 15px;
       width: 75%;
@@ -3401,7 +3423,7 @@ font-weight:normal;
     }
 
     section.ecosostenibile p{
-      font-size: 14px;
+      font-size: 16px;
       width: 70%;
     }
  }
